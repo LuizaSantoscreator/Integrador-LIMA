@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>Livraria Viver - E-commerce</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho da página -->
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="images/icons8-livro-aberto-48.png" alt="Livro aberto" />
+        <h1 class="logo">Livraria Viver</h1>
+      </div>
+
+      <div class="nav-links-e-icones">
+        <a href="index.html" class="home-link">Home</a>
+        <div class="icones">
+          <a href="cadastro.html">
+            <img src="images/icons8-usuário-100.png" alt="Usuário" />
+          </a>
+
+          <a href="carrinho1.html">
+            <img src="images/icons8-carrinho-50.png" alt="Carrinho" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção de destaque/promocional -->
+    <div class="banner">
+      <nav class="menu">
+        <ul class="categorias">
+          <li><a href="teladefiltros_romance.html">Romance</a></li>
+          <li><a href="teladefiltros_terror">Terror</a></li>
+          <li>
+            <a href="teladefiltros_ficção&fantasia.html">Ficção & Fantasia</a>
+          </li>
+          <li><a href="teladefiltros_nãoficção.html">Não-Ficção</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="livro">
+      <img src="images/imperfeitos.png" alt="Capa do livro imperfeitos" />
+      <div class="info">
+        <h1>Imperfeitos</h1>
+        <h3>Christina Lauren</h3>
+        <p>
+          Olive Torres sempre se considerou a “gêmea azarada” da família —
+          enquanto sua irmã gêmea, Ami, parece ter tudo dando certo. Mas o
+          destino muda quando, em meio ao casamento de Ami, todos os
+          convidados — exceto Olive e Ethan (irmão do noivo) — são vítimas de
+          intoxicação alimentar e precisam cancelar a lua de mel. Aproveitando
+          que a viagem já não é reembolsável, Olive e Ethan, que são inimigos
+          declarados, acabam partindo para o Havaí juntos. Durante dez dias
+          dividindo uma suíte, a tensão (e as mentirinhas) entre eles crescem,
+          e o que era rancor começa a se transformar em atração. Enfrentando
+          antigas desavenças, personalidades opostas e as imperfeições da vida
+          real, Olive e Ethan descobrem que, às vezes, nas circunstâncias mais
+          improváveis, pode nascer um amor verdadeiro
+        </p>
+        <p><strong>Valor:</strong> R$: 45,90</p>
+        <p><strong>Número de páginas:</strong> 336</p>
+        <p><strong>Idioma:</strong> Português</p>
+        <div class="quantity-container">
+          <button class="qty-btn" onclick="decrease()">-</button>
+          <span class="qty-number" id="quantity">1</span>
+          <button class="qty-btn" onclick="increase()">+</button>
+        </div>
+
+        <a href="carrinho1.html">
+          <button class="add-to-cart">Adicionar ao carrinho</button>
+        </a>
+      </div>
+    </section>
+    <hr />
+
+    <section class="avaliacoes">
+      <h2>Avaliações:</h2>
+      <p>@usuário123</p>
+      <p>⭐️⭐️⭐️⭐️⭐️</p>
+      <p>
+        Esse livro me prendeu do começo ao fim! A escrita da autora é leve e
+        envolvente, e os personagens são tão bem construídos que parece que
+        você está vivendo tudo com eles. Com certeza entrou para a minha lista
+        de favoritos. Recomendo demais!
+      </p>
+
+      <p>@usuário123</p>
+      <p>⭐️⭐️⭐️⭐️</p>
+      <p>
+        Uma leitura emocionante, com momentos divertidos e outros bem
+        reflexivos. Achei que o ritmo poderia ter sido um pouco mais rápido em
+        algumas partes, mas no geral foi uma experiência maravilhosa. Ideal
+        para quem gosta de romances com profundidade.
+      </p>
+
+      <p>@usuário123</p>
+      <p>⭐️⭐️⭐️⭐️⭐️</p>
+      <p>
+        Imperfeitos é uma leitura agradável para fãs de romances leves,
+        especialmente quem gosta de histórias de “inimigos que se tornam
+        amantes”. É perfeito para momentos de descontração, férias ou para
+        quem quer dar uma pausa em leituras mais densas. Não é um livro que
+        vai revolucionar o gênero, mas entrega exatamente o que promete:
+        diversão, romance e personagens com quem é fácil se identificar.
+      </p>
+    </section>
+  </main>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-redes">
+        <p>Conheça nossas Redes Sociais!</p>
+        <img src="images/icons8-facebook-novo-48.png" alt="Facebook" />
+        <img src="images/icons8-instagram-48.png" alt="Instagram" />
+        <img src="images/icons8-whatsapp-48.png" alt="WhatsApp" />
+        <img src="images/icons8-x-48.png" alt="X" />
+      </div>
+
+      <div class="footer-links">
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="atendimento.html">Atendimento</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

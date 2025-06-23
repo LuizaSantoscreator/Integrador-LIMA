@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Livraria Viver</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="barra-navegacao-admin">
+            <div class="container-logo">
+                <img src="images/icons8-livro-aberto-48.png" alt="Ícone de Livro" />
+                <h1 class="texto-logo">Admin Livraria Viver</h1>
+            </div>
+            <a href="index.html" class="link-sair">Sair</a>
+        </div>
+    </header>
+
+    <main class="container-admin">
+        <div class="cabecalho-admin">
+            <h1>Gerenciamento de Livros</h1>
+            <button class="meu-botao botao-adicionar">Adicionar Novo Livro</button>
+        </div>
+
+        <div class="container-tabela">
+            <table class="tabela-livros">
+                <thead>
+                    <tr>
+                        <th>Capa</th>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Preço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/imperfeitos.png" alt="Capa de Imperfeitos" class="capa-livro"
+                                onerror="this.src='https://placehold.co/50x75/ccc/000?text=Capa';"></td>
+                        <td>Imperfeitos</td>
+                        <td>Christina Lauren</td>
+                        <td>R$ 45,90</td>
+                        <td class="coluna-acoes">
+                            <button class="meu-botao botao-editar">Editar</button>
+                            <button class="meu-botao botao-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/coraline.png" alt="Capa de Coraline" class="capa-livro"
+                                onerror="this.src='https://placehold.co/50x75/ccc/000?text=Capa';"></td>
+                        <td>Coraline</td>
+                        <td>Neil Gaiman</td>
+                        <td>R$ 39,90</td>
+                        <td class="coluna-acoes">
+                            <button class="meu-botao botao-editar">Editar</button>
+                            <button class="meu-botao botao-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/quarta asa.png" alt="Capa de Quarta Asa" class="capa-livro"
+                                onerror="this.src='https://placehold.co/50x75/ccc/000?text=Capa';"></td>
+                        <td>Quarta Asa</td>
+                        <td>Rebecca Yarros</td>
+                        <td>R$ 54,99</td>
+                        <td class="coluna-acoes">
+                            <button class="meu-botao botao-editar">Editar</button>
+                            <button class="meu-botao botao-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <div class="janela-modal">
+        <div class="conteudo-modal">
+            <div class="cabecalho-modal">
+                <h2>Adicionar Novo Livro</h2>
+                <div class="botao-fechar">&times;</div>
+            </div>
+            <form class="formulario-livro">
+                <div class="grupo-formulario">
+                    <label for="title">Título do Livro</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="author">Autor</label>
+                    <input type="text" id="author" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="price">Preço (ex: 45.90)</label>
+                    <input type="number" id="price" step="0.01" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="category">Categoria</label>
+                    <select id="category" required>
+                        <option value="Romance">Romance</option>
+                        <option value="Terror">Terror</option>
+                        <option value="Ficção & Fantasia">Ficção & Fantasia</option>
+                        <option value="Não-Ficção">Não-Ficção</option>
+                    </select>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="imageUrl">URL da Imagem da Capa</label>
+                    <input type="url" id="imageUrl" required placeholder="https://exemplo.com/capa.png">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="description">Descrição (Sinopse)</label>
+                    <textarea id="description" rows="4" required></textarea>
+                </div>
+                <div class="acoes-formulario">
+                    <button type="button" class="meu-botao botao-cancelar">Cancelar</button>
+                    <button type="submit" class="meu-botao botao-salvar">Salvar Livro</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
